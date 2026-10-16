@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#100c16">
+<meta name="description" content="A little note from the heart, for Moksha.">
+<title>For Mokshu ♡</title>
+<style>
+:root{--bg:#100c16;--panel:#1a1422;--panel2:#211827;--text:#f7edf3;--muted:#c4adbd;--rose:#ff7da8;--rose2:#d94f83;--gold:#e9c58c;--line:#4c3045}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 12% 5%,#422037 0,transparent 35%),radial-gradient(ellipse at 95% 80%,#27203c 0,transparent 35%),var(--bg);color:var(--text);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,sans-serif;overflow-x:hidden}
+main{min-height:100svh;display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top)) 12px max(16px,env(safe-area-inset-bottom));position:relative}
+.card{width:min(100%,760px);position:relative;z-index:1;background:linear-gradient(155deg,rgba(34,25,42,.97),rgba(22,16,29,.97));border:1px solid #54354b;border-radius:30px;padding:clamp(19px,4vw,42px);box-shadow:0 24px 90px #0008,0 0 45px #e7548010;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,transparent,var(--rose),var(--gold),transparent)}
+.topline{display:flex;justify-content:center;align-items:center;gap:8px;color:#e5b5ca;text-transform:uppercase;letter-spacing:.17em;font-size:.68rem;font-weight:800}
+.hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;margin-top:18px}
+h1{font-size:clamp(2.5rem,10vw,5rem);line-height:.96;letter-spacing:-.065em;color:var(--text);margin:0}
+h1 span{color:var(--rose);font-family:Georgia,serif;font-style:italic;font-weight:500}
+.lead{color:var(--muted);line-height:1.75;font-size:clamp(.98rem,3.5vw,1.1rem);margin:14px 0 0;max-width:500px}
+.pill{display:inline-block;margin-top:17px;padding:8px 12px;border:1px solid #684056;background:#2c1c2c;color:#f3c5d8;border-radius:999px;font-size:.78rem}
+.photo-wrap{position:relative;max-width:430px;width:100%;margin:0 auto}
+.photo-wrap:before{content:"";position:absolute;inset:-7px 9px 9px -7px;border:1px solid #a55a7c;border-radius:23px;transform:rotate(-2deg)}
+.photo{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;object-position:center 40%;border-radius:19px;border:1px solid #694258;position:relative;box-shadow:0 16px 40px #0005}
+.caption{text-align:center;color:#c9a3b6;font-family:Georgia,serif;font-style:italic;font-size:.9rem;margin:12px 0 0}
+.section{margin-top:28px}
+.label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:900;margin-bottom:12px}
+.letter{background:linear-gradient(140deg,#211925,#1b1421);border:1px solid var(--line);border-radius:22px;padding:clamp(18px,4vw,28px);font-size:clamp(.98rem,3.4vw,1.07rem);line-height:1.9;color:#f4e8ef}
+.letter p{margin:0 0 15px}.letter p:last-child{margin-bottom:0}
+.letter strong{color:#ff9dbc}
+.poem{margin:20px 0;padding:19px 12px;border-top:1px solid #523147;border-bottom:1px solid #523147;text-align:center;font-family:Georgia,serif;font-size:clamp(1rem,3.8vw,1.2rem);line-height:1.9;color:#f1c6d7}
+.poem em{color:var(--gold);font-style:normal}
+.actions{display:grid;grid-template-columns:1fr;gap:11px;margin-top:22px}
+button{font:inherit;font-size:.97rem;font-weight:800;padding:15px 18px;border-radius:15px;cursor:pointer;transition:transform .18s,filter .18s;width:100%;border:1px solid transparent}
+button:active{transform:scale(.985)}
+.primary{background:linear-gradient(120deg,#ff8eb2,#d84b80);color:#230e1b;box-shadow:0 8px 28px #d94f8330}
+.secondary{background:#2a2030;color:#f7d5e3;border-color:#684258}
+.hidden{display:none!important}
+.reveal{margin-top:14px;padding:17px;border-radius:17px;border:1px solid #76523d;background:linear-gradient(135deg,#30231f,#251c2a);color:#f7e8dd;line-height:1.8;animation:appear .35s ease}
+.footer{text-align:center;color:#9f8296;font-size:.78rem;line-height:1.7;margin-top:25px}
+.floating{position:fixed;bottom:-45px;pointer-events:none;z-index:4;animation:rise linear forwards}
+.star{position:fixed;color:#b77c9b;opacity:.55;pointer-events:none}
+.s1{top:8%;left:5%}.s2{right:7%;top:18%}.s3{bottom:12%;left:6%}.s4{bottom:8%;right:6%}
+@keyframes rise{to{transform:translateY(-115svh) rotate(24deg);opacity:0}}
+@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:680px){main{padding:30px}.hero{grid-template-columns:minmax(0,1fr) minmax(220px,.82fr);gap:30px}.photo-wrap{max-width:360px}.topline{justify-content:flex-start}.actions{grid-template-columns:1fr 1fr}.hero-copy{padding-left:6px}.section{margin-top:34px}}
+@media(max-width:360px){.card{padding:17px 14px;border-radius:23px}.letter{padding:16px}.topline{letter-spacing:.1em;font-size:.62rem}button{padding:14px 12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<span class="star s1">✦</span><span class="star s2">♡</span><span class="star s3">✧</span><span class="star s4">✦</span>
+<main>
+<article class="card">
+  <div class="topline">♡ &nbsp; something honest, just for you &nbsp; ♡</div>
+  <div class="hero">
+    <div class="hero-copy">
+      <h1>I'm sorry,<br><span>Mokshu.</span></h1>
+      <p class="lead">To the girl who makes ordinary days feel a little more magical—and whose heart I should always handle with care.</p>
+      <div class="pill">a little note from your favourite idiot 🖤</div>
+    </div>
+    <figure class="photo-wrap">
+      <img class="photo" src="moksha-photo.jpeg" alt="A favourite photo of Moksha and me" fetchpriority="high">
+      <figcaption class="caption">My favourite kind of us. ♡</figcaption>
+    </figure>
+  </div>
+
+  <section class="section">
+    <div class="label">A few words I mean</div>
+    <div class="letter">
+      <p><strong>My Moksha,</strong></p>
+      <p>I’m sorry for hurting you. I know that saying “sorry” doesn’t magically fix everything, and I don’t expect one cute website to erase how you felt.</p>
+      <p>You deserve someone who listens to understand, not just to reply; someone who protects your peace, respects your feelings, and makes you feel loved even when things aren’t perfect. I want to be better at that.</p>
+      <p>I can’t change the moment that upset you, but I can own my part, learn from it, and show you through my actions that your feelings matter to me. You don’t have to forgive me before you’re ready. I just hope, when you feel okay, you’ll let me listen. ❤️</p>
+      <div class="poem">
+        I was a goof, I fumbled the show,<br>
+        Now my brain says, “Bro, say sorry—<em>go!</em>” 😭<br>
+        No excuses, no dramatic plea,<br>
+        Just a better version of me.<br><br>
+        If sorry had flowers, you'd get a whole field,<br>
+        If hugs fixed it, I'd bring a hug-shield. 🌷<br>
+        So here's one promise, simple and true:<br>
+        <em>I'll do the work—not just say “I love you.”</em>
+      </div>
+      <p>And for the record, Mokshu: you’re still ridiculously cute. This is not a bribe. (Okay, maybe 2% a compliment bribe.) 🥹</p>
+    </div>
+  </section>
+
+  <div class="actions">
+    <button class="primary" id="listenBtn">Can I make things right, one step at a time? 🥺</button>
+    <button class="secondary" id="hugBtn">Unlock your virtual hug 🤗</button>
+  </div>
+  <div id="reply" class="reveal hidden">No pressure, no timer, no “you have to forgive me.” Just me, ready to listen properly whenever you're ready. Your feelings matter, Mokshu. 💗</div>
+  <div id="hug" class="reveal hidden">HUG DELIVERY CONFIRMED 🧸💌<br>One warm hug, a tiny forehead-kiss request (only if approved 😌), and emergency chocolate on standby. 🍫</div>
+  <div class="footer">Written with a sorry heart, a little humour, and lots of love. ♡<br>Take all the time you need, Moksha.</div>
+</article>
+</main>
+<script>
+function confettiHearts(){const symbols=['♡','💗','✨','🌷','💕','🖤'];for(let i=0;i<18;i++){const e=document.createElement('span');e.className='floating';e.textContent=symbols[Math.floor(Math.random()*symbols.length)];e.style.left=Math.random()*100+'vw';e.style.animationDuration=(3+Math.random()*3)+'s';e.style.fontSize=(15+Math.random()*18)+'px';document.body.appendChild(e);setTimeout(()=>e.remove(),6600)}}
+document.getElementById('listenBtn').addEventListener('click',()=>{document.getElementById('reply').classList.toggle('hidden');confettiHearts()});
+document.getElementById('hugBtn').addEventListener('click',()=>{document.getElementById('hug').classList.toggle('hidden');confettiHearts()});
+</script>
+</body>
+</html>
